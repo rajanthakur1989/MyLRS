@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>LMS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/one-page-wonder.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">LMS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Log In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white">
+      <div class="masthead-content">
+        <div class="container">
+          <h1 class="masthead-heading mb-0">Web Services</h1>
+          <h2 class="masthead-subheading mb-0">Learning with new experience</h2>
+          <a data-xapi-event="clicked" data-xapi-element="Learn More" href="#" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
+        </div>
+      </div>
+      <div class="bg-circle-1 bg-circle"></div>
+      <div class="bg-circle-2 bg-circle"></div>
+      <div class="bg-circle-3 bg-circle"></div>
+      <div class="bg-circle-4 bg-circle"></div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid" src="img/soap.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h2 class="display-4">SOAP-Simple Object Access Protocols</h2>
+              <p>As we know all the real world applications are not simple, they support complex operations, and to design complex operation we required conversational state and contextual information to be maintained. So by using SOAP developers no need to worry about writing plumbing code in application layer by themselves because SOAP require less plumbing code as compared to REST. These web services are useful to handle asynchronous processing and request of data. This support several protocols and technologies which are interoperable like UDDI, WSDL, XML WS-addressing. WSDL is a common set of rules to define the messages, binding, operations and the location of the services.</p>
+              <a data-xapi-event="clicked" data-xapi-element="soap" href="#" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid" src="img/rest.jpeg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-5">
+              <h2 class="display-4">REST</h2>
+              <p>While REST stands for Representational State Transfer, which is an architectural style for networked hypermedia applications, it is primarily used to build Web services that are lightweight, maintainable, and scalable. A service based on REST is called a RESTful service.</p>
+              <a data-xapi-event="clicked" data-xapi-element="rest" href="#" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <!-- <img class="img-fluid" src="img/difference.jpg" alt=""> -->
+              <video width="560" height="380" controls data-xapi-event="video" data-xapi-element="Video of SOAP vs. REST">
+                  <source src="videos/SOAPvsREST.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h2 class="display-4">SOAP vs. REST</h2>
+              <p>Description for course 3</p>
+              <a data-xapi-event="clicked" data-xapi-element="soap vs. rest" href="#" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-black">
+      <div class="container">
+        <p class="m-0 text-center text-white small">Copyright &copy; LMS 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/xapiwrapper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      $("a[data-xapi-event='clicked']").click(function(event) {
+        console.log("Clicked: "+$(this).attr('data-xapi-element'));
+        xapi_clicked($(this).attr('data-xapi-element'), $(this).attr('data-xapi-element'));
+      });
+
+      $("video[data-xapi-event='video']").on("play", function(event) {
+        console.log("Video Played: "+$(this).attr('data-xapi-element'));
+        xapi_watched($(this).attr('data-xapi-element'), event);
+      });
+
+      $("video[data-xapi-event='video']").on("pause", function(event) {
+        console.log("Video Paused: "+$(this).attr('data-xapi-element'));
+        xapi_watched($(this).attr('data-xapi-element'), event, $(this).get(0).currentTime);
+      });
+
+      $("video[data-xapi-event='video']").on("ended", function(event) {
+        console.log("Video Paused: "+$(this).attr('data-xapi-element'));
+        xapi_watched($(this).attr('data-xapi-element'), event);
+      });
+
+
+     var conf = {
+          "endpoint": "https://cloud.scorm.com/tc/6M65KNXAF9/",
+          "user": "Mme1xcpy2iVZ3GYK_bs",
+          "password": "fbWQR-uj_7uQ5v5QRgg"
+      };
+
+      ADL.XAPIWrapper.changeConfig(conf);
+
+      function xapi_clicked(what) {
+        var stmt = {
+          "actor": {
+            "mbox": "mailto:" + "shiva.dixit11@gmail.com",
+            "name": "Shiva Dixit"
+          },
+          "verb" : {
+            "id" : "http://adlnet.gov/expapi/verbs/experienced",
+            "display" : {"en-US" : "experienced"}
+          },
+          "object": {
+            "id" : "http://adlnet.gov/expapi/verbs/media",
+            "definition" : {
+              "name": {
+                "en-US" : what
+              }
+            }
+          }
+        };
+        console.log(stmt);
+        var resp_obj = ADL.XAPIWrapper.sendStatement(stmt);
+      };
+
+      function xapi_watched(what, event, time) {
+        console.log("event: "+ event.type);
+        var experience = "launched";
+        if(event.type == "ended"){
+          experience = "mastered";
+        }
+        if(event.type == "pause"){
+          experience = "exited";
+          what = what + " at "+time; 
+        }
+        var stmt = {
+          "actor": {
+            "mbox": "mailto:" + "shiva.dixit11@gmail.com",
+            "name": "Shiva Dixit"
+          },
+          "verb" : {
+            "id" : "http://adlnet.gov/expapi/verbs/"+experience,
+            "display" : {"en-US" : experience}
+          },
+          "object": {
+            "id" : "http://adlnet.gov/expapi/verbs/media",
+            "definition" : {
+              "name": {
+                "en-US" : what
+              }
+            }
+          }
+        };
+        console.log(stmt);
+        var resp_obj = ADL.XAPIWrapper.sendStatement(stmt);
+      };
+    </script>
+  </body>
+
+</html>
